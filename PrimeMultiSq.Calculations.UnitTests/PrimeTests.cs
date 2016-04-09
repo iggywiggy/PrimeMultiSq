@@ -1,15 +1,25 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PrimeMultiSq.Calculations.Interfaces;
+using Assert = NUnit.Framework.Assert;
 
 namespace PrimeMultiSq.Calculations.UnitTests
 {
     [TestClass]
     public class PrimeTests
     {
+        private IPrime _prime;
+        [TestInitialize]
+        public void TestInitialise()
+        {
+            _prime = new Prime();
+        }
+
         [TestMethod]
         public void GetPrimes_ParamNumberOfPrimesZero_Expected_ArgumentNullException()
         {
-            Assert.Fail();
+            var numberOfPrimes = 0;
+            Assert.Throws(typeof (ArgumentNullException), () => _prime.GetPrimes(numberOfPrimes));
         }
 
         [TestMethod]

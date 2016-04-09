@@ -58,6 +58,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PrimeMultiSq.Calculations.Interfaces\PrimeMultiSq.Calculations.Interfaces.csproj">
+      <Project>{9a4950a5-57ce-4289-9ebe-740593b3bd9f}</Project>
+      <Name>PrimeMultiSq.Calculations.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrimeMultiSq.Calculations\PrimeMultiSq.Calculations.csproj">
+      <Project>{8c70725d-5ca0-4a50-a739-322e93a2c67a}</Project>
+      <Name>PrimeMultiSq.Calculations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
