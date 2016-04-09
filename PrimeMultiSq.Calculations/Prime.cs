@@ -14,8 +14,12 @@ namespace PrimeMultiSq.Calculations
             if(numberOfPrimes == 0)
                 throw new ArgumentNullException(nameof(numberOfPrimes));
 
-            return null;
+            var primes = new List<int>();
 
+            if (numberOfPrimes > 0)
+                primes.Add(2);
+
+            return primes.ToArray();
         }
     }
 }

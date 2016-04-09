@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PrimeMultiSq.Calculations.Interfaces;
 using Assert = NUnit.Framework.Assert;
@@ -25,13 +26,17 @@ namespace PrimeMultiSq.Calculations.UnitTests
         [TestMethod]
         public void GetPrimes_ParamNumberOfPrimesOne_Expected_ReturnPrimeCountOne()
         {
-            Assert.Fail();
+            var expectedCount = 1;
+            var actualCount = _prime.GetPrimes(1).Count();
+            Assert.That(expectedCount == actualCount);
         }
 
         [TestMethod]
         public void GetPrimes_ParamNumberOfPrimesOne_Expected_ReturnedPrimeNumber_Two()
         {
-            Assert.Fail();
+            var expectedPrime = 2;
+            var actualPrime = _prime.GetPrimes(1).FirstOrDefault();
+            Assert.That(expectedPrime == actualPrime);
         }
 
         [TestMethod]
