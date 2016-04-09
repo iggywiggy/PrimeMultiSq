@@ -19,6 +19,9 @@ namespace PrimeMultiSq.Calculations
             if (numberOfPrimes > 0)
                 primes.Add(2);
 
+            if(numberOfPrimes > 1)
+                primes.Add(3);
+
             return primes.ToArray();
         }
     }

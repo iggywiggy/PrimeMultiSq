@@ -25,7 +25,7 @@ namespace PrimeMultiSq.Calculations.UnitTests
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesOne_Expected_ReturnPrimeCountOne()
+        public void GetPrimes_ParamNumberOfPrimes_1_Expected_ReturnPrimeCount_1()
         {
             var expectedCount = 1;
             var actualCount = _prime.GetPrimes(1).Count();
@@ -33,7 +33,7 @@ namespace PrimeMultiSq.Calculations.UnitTests
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesOne_Expected_ReturnedPrimeNumber_Two()
+        public void GetPrimes_ParamNumberOfPrimes_1_Expected_ReturnedPrimeNumber_2()
         {
             var expectedPrime = 2;
             var actualPrime = _prime.GetPrimes(1).FirstOrDefault();
@@ -41,7 +41,7 @@ namespace PrimeMultiSq.Calculations.UnitTests
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimes_2_Expcted_ReturnPrimeCount_2()
+        public void GetPrimes_ParamNumberOfPrimes_2_Expected_ReturnPrimeCount_2()
         {
             var expectedCount = 2;
             var actualCount = _prime.GetPrimes(2).Count();
