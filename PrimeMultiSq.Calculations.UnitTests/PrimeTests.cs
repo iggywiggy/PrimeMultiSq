@@ -10,6 +10,7 @@ namespace PrimeMultiSq.Calculations.UnitTests
     public class PrimeTests
     {
         private IPrime _prime;
+
         [TestInitialize]
         public void TestInitialise()
         {
@@ -40,35 +41,44 @@ namespace PrimeMultiSq.Calculations.UnitTests
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesTwo_Expcted_ReturnPrimeCountTwo()
+        public void GetPrimes_ParamNumberOfPrimes_2_Expcted_ReturnPrimeCount_2()
         {
-            Assert.Fail();
+            var expectedCount = 2;
+            var actualCount = _prime.GetPrimes(2).Count();
+            Assert.That(expectedCount == actualCount);
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesTwo_Expected_ReturnPrimeNumbers_TwoAndThree()
+        public void GetPrimes_ParamNumberOfPrimes_2_Expected_ReturnPrimeNumbers_2And3()
         {
-            Assert.Fail();
+            var expectedPrimes = new[] {2, 3};
+            var actualPrimes = _prime.GetPrimes(2);
+            CollectionAssert.AreEqual(expectedPrimes,actualPrimes);
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesRandom_Expected_ReturnedCorrectNumber()
+        public void GetPrimes_ParamNumberOfPrimes_23_Expected_ReturnedCorrectNumber()
         {
-            Assert.Fail();
+            var expectedCount = 23;
+            var actualCount = _prime.GetPrimes(expectedCount).Count();
+            Assert.That(expectedCount == actualCount);
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesRandomSeedTen_Expected_ReturnedCorrectNumber()
+        public void GetPrimes_ParamNumberOfPrimes_550_Expected_ReturnedCorrectNumber()
         {
-            Assert.Fail();
+            var expectedCount = 550;
+            var actualCount = _prime.GetPrimes(expectedCount).Count();
+            Assert.That(expectedCount == actualCount);
         }
 
         [TestMethod]
-        public void GetPrimes_ParamNumberOfPrimesRandomSeedOneHundred_Expected_ReturnedCorrectNumber()
+        public void GetPrimes_ParamNumberOfPrimes_12_Expected_ReturnedCorrectNumber()
         {
-            Assert.Fail();
+            var expectedCount = 12;
+            var actualCount = _prime.GetPrimes(expectedCount).Count();
+            Assert.That(expectedCount == actualCount);
         }
-
 
     }
 }
