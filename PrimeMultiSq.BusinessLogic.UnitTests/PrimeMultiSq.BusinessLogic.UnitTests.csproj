@@ -55,13 +55,16 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GridCreatorTests.cs" />
-    <Compile Include="GridCreatorTestsHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrimeMultiSq.BusinessLogic.Interfaces\PrimeMultiSq.BusinessLogic.Interfaces.csproj">
       <Project>{9C5B3D9E-E782-4C32-A20A-7081E5484341}</Project>
       <Name>PrimeMultiSq.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrimeMultiSq.BusinessLogic\PrimeMultiSq.BusinessLogic.csproj">
+      <Project>{C0A53E19-A46B-49DC-9D39-14DE11E3F89E}</Project>
+      <Name>PrimeMultiSq.BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

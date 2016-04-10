@@ -14,29 +14,21 @@ namespace PrimeMultiSq.BusinessLogic.UnitTests
 
         private IGridCreator _gridCreator;
 
+        [TestInitialize]
+        public void TestIntiliase()
+        {
+            _gridCreator = new GridCreator();
+        }
+
         [TestMethod]
         public void CreateGrid_ParamNumberOfPrimesValueZero_ThrowsArgumentNullException()
         {
             Assert.Fail();
         }
 
-        [TestMethod]
-        public void CreateGrid_ParamNumberOfPrimesValueOne_ReturnValueCorrect()
-        {
-            Assert.Fail();
-        }
+        
 
-        [TestMethod]
-        public void CreateGrid_ParamNumbeROfPrimesValueTwo_ReturnValueCorrect()
-        {
-            Assert.Fail();
-        }
 
-        [TestMethod]
-        public void CreateGrid_ParamNumberOfPrimesValue5_ReturnValueCorrect()
-        {
-            Assert.Fail();
-        }
 
         [TestMethod]
         [TestCase(0,0,1, ExpectedResult = 0)]
