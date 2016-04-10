@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="PrimeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowCreatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrimeMultiSq.Calculations.Interfaces\PrimeMultiSq.Calculations.Interfaces.csproj">
