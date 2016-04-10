@@ -22,7 +22,16 @@ namespace PrimeMultiSq.Calculations
             if(numberOfPrimes > 1)
                 primes.Add(3);
 
-            return primes.ToArray();
+            for(int i = 5; ; i+=2)
+            {
+                if(primes.Count == numberOfPrimes)
+                    return primes.ToArray();
+
+                bool isPrime = primes.All(p => i % p != 0);
+
+                if (isPrime && primes.Count < numberOfPrimes)
+                    primes.Add(i);
+            }            
         }
     }
 }

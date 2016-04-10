@@ -243,3 +243,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/PrimeMultiSq.Calculations.UnitTests/UnitTest1.cs
