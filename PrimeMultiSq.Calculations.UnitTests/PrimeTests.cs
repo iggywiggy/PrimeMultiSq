@@ -53,7 +53,7 @@ namespace PrimeMultiSq.Calculations.UnitTests
         {
             var expectedPrimes = new[] {2, 3};
             var actualPrimes = _primeGenerator.GetPrimes(2);
-            CollectionAssert.AreEqual(expectedPrimes,actualPrimes);
+            CollectionAssert.AreEqual(expectedPrimes, actualPrimes);
         }
 
         [TestMethod]
@@ -79,6 +79,5 @@ namespace PrimeMultiSq.Calculations.UnitTests
             var actualCount = _primeGenerator.GetPrimes(expectedCount).Count();
             Assert.That(expectedCount == actualCount);
         }
-
     }
 }

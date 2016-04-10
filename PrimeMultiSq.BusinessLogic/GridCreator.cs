@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using PrimeMultiSq.BusinessLogic.Interfaces;
 using PrimeMultiSq.Calculations.Interfaces;
 
-
 namespace PrimeMultiSq.BusinessLogic
 {
     public class GridCreator : IGridCreator
@@ -17,20 +16,19 @@ namespace PrimeMultiSq.BusinessLogic
 
         public IEnumerable<int[]> CreatePrimeMultiGrid(int numberOfPrimes)
         {
-            if(numberOfPrimes == 0)
+            if (numberOfPrimes == 0)
                 throw new ArgumentNullException(nameof(numberOfPrimes));
 
-            int[] topRow = _rowCreator.CreateTopRow(numberOfPrimes);
+            var topRow = _rowCreator.CreateTopRow(numberOfPrimes);
 
             var grid = new List<int[]> {topRow};
 
             for (var i = 0; i < numberOfPrimes; i++)
             {
-               grid.Add(_rowCreator.CreateMultiRow(topRow[i+1], topRow));
+                grid.Add(_rowCreator.CreateMultiRow(topRow[i + 1], topRow));
             }
 
             return grid;
         }
-       
     }
 }

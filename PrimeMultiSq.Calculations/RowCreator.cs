@@ -15,7 +15,7 @@ namespace PrimeMultiSq.Calculations
 
         public int[] CreateMultiRow(int leftNumber, int[] topRowNumbers)
         {
-            if(topRowNumbers == null || topRowNumbers.Count() == 0)
+            if (topRowNumbers == null || topRowNumbers.Count() == 0)
                 throw new ArgumentNullException(nameof(topRowNumbers));
 
             var row = new int[topRowNumbers.Length];
@@ -35,19 +35,16 @@ namespace PrimeMultiSq.Calculations
             if (numberOfPrimes == 0)
                 throw new ArgumentNullException(nameof(numberOfPrimes));
 
-            int[] primes = _primeGenerator.GetPrimes(numberOfPrimes);
+            var primes = _primeGenerator.GetPrimes(numberOfPrimes);
 
             var topRow = new int[1 + numberOfPrimes];
 
             for (var i = 1; i < topRow.Count(); i++)
             {
-                topRow[i] = primes[i-1];
+                topRow[i] = primes[i - 1];
             }
 
             return topRow;
         }
-
     }
-
-   
 }

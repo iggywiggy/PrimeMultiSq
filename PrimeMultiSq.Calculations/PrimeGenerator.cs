@@ -9,7 +9,7 @@ namespace PrimeMultiSq.Calculations
     {
         public int[] GetPrimes(int numberOfPrimes)
         {
-            if(numberOfPrimes == 0)
+            if (numberOfPrimes == 0)
                 throw new ArgumentNullException(nameof(numberOfPrimes));
 
             var primes = new List<int>();
@@ -17,21 +17,19 @@ namespace PrimeMultiSq.Calculations
             if (numberOfPrimes > 0)
                 primes.Add(2);
 
-            if(numberOfPrimes > 1)
+            if (numberOfPrimes > 1)
                 primes.Add(3);
 
-            for(int i = 5; ; i+=2)
+            for (var i = 5;; i += 2)
             {
-                if(primes.Count == numberOfPrimes)
+                if (primes.Count == numberOfPrimes)
                     return primes.ToArray();
 
-                bool isPrime = primes.All(p => i % p != 0);
+                var isPrime = primes.All(p => i%p != 0);
 
                 if (isPrime && primes.Count < numberOfPrimes)
                     primes.Add(i);
-            }            
+            }
         }
-
-        
     }
 }

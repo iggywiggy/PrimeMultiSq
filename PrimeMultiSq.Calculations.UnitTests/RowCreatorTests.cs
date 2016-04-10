@@ -10,8 +10,8 @@ namespace PrimeMultiSq.Calculations.UnitTests
     [TestClass]
     public class RowCreatorTests
     {
-        private IRowCreator _rowCreator;
         private IPrimeGenerator _primeGenerator;
+        private IRowCreator _rowCreator;
 
         [TestInitialize]
         public void TestInitialise()
@@ -47,8 +47,8 @@ namespace PrimeMultiSq.Calculations.UnitTests
             return _rowCreator.CreateMultiRow(leftNumber, topRowPrimes).Count();
         }
 
-        [TestCase(2, new[] {0 , 2, 3, 5}, ExpectedResult = new[] {2, 4, 6, 10})]
-        [TestCase(3, new[] {0 , 2, 3, 5}, ExpectedResult = new[] {3, 6, 9, 15})]
+        [TestCase(2, new[] {0, 2, 3, 5}, ExpectedResult = new[] {2, 4, 6, 10})]
+        [TestCase(3, new[] {0, 2, 3, 5}, ExpectedResult = new[] {3, 6, 9, 15})]
         [TestCase(5, new[] {0, 2, 3, 5, 7, 11}, ExpectedResult = new[] {5, 10, 15, 25, 35, 55})]
         public int[] CreateRow_GeneratedMultiplicationsEqual(int leftNumber, int[] topRowNumbers)
         {
@@ -71,7 +71,7 @@ namespace PrimeMultiSq.Calculations.UnitTests
 
         [TestCase(2, ExpectedResult = new[] {0, 2, 3})]
         [TestCase(3, ExpectedResult = new[] {0, 2, 3, 5})]
-        [TestCase(5, ExpectedResult = new[] {0 ,2, 3, 5, 7, 11})]
+        [TestCase(5, ExpectedResult = new[] {0, 2, 3, 5, 7, 11})]
         public int[] CreateTopRow_ReturnValuesCorrect(int numberofPrimes)
         {
             return _rowCreator.CreateTopRow(numberofPrimes);

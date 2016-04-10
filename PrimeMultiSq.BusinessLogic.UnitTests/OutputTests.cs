@@ -37,12 +37,11 @@ namespace PrimeMultiSq.BusinessLogic.UnitTests
         }
 
 
-        [TestCase(0,ExpectedResult = '|')]
-        [TestCase(3,ExpectedResult = '0')]
-        
+        [TestCase(0, ExpectedResult = '|')]
+        [TestCase(3, ExpectedResult = '0')]
         public char FormatOutput_NumberOfLinesReturned(int charAtIndex)
         {
-            string output = _output.FormatOutput(CreateGrid()).ToString();
+            var output = _output.FormatOutput(CreateGrid()).ToString();
             return output[charAtIndex];
         }
 
@@ -55,6 +54,5 @@ namespace PrimeMultiSq.BusinessLogic.UnitTests
                 new[] {3, 6, 9}
             };
         }
-
     }
 }

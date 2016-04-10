@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using PrimeMultiSq.BusinessLogic.Interfaces;
 
 namespace PrimeMultiSq.BusinessLogic
@@ -11,12 +10,12 @@ namespace PrimeMultiSq.BusinessLogic
     {
         public StringBuilder FormatOutput(IEnumerable<int[]> input)
         {
-            if(input == null)
+            if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
             var enumerable = input as IList<int[]> ?? input.ToList();
 
-            if(!enumerable.Any())
+            if (!enumerable.Any())
                 throw new ArgumentNullException(nameof(input));
 
             var grid = new StringBuilder();
@@ -35,9 +34,9 @@ namespace PrimeMultiSq.BusinessLogic
 
             rowFormatted.Append(FormatFirstIndex(row[0]));
 
-            for (int i = 1; i < row.Count(); i++)
+            for (var i = 1; i < row.Count(); i++)
             {
-                rowFormatted.Append($"  {row[i]}|");
+                rowFormatted.Append($"  {row[i],4}|");
             }
 
             return rowFormatted.ToString();
@@ -45,7 +44,7 @@ namespace PrimeMultiSq.BusinessLogic
 
         private string FormatFirstIndex(int number)
         {
-            return $"|  {number}|";
+            return $"|  {number,4}|";
         }
     }
 }
