@@ -5,17 +5,14 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PrimeMultiSq.Calculations")]
+[assembly: AssemblyTitle("PrimeMultiSq.Control")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PrimeMultiSq.Calculations")]
+[assembly: AssemblyProduct("PrimeMultiSq.Control")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("PrimeMultiSq.Calculations.UnitTests")]
-[assembly: InternalsVisibleTo("PrimeMultiSq.BusinessLogic.UnitTests")]
-[assembly: InternalsVisibleTo("PrimeMultiSq.Control")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -23,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8c70725d-5ca0-4a50-a739-322e93a2c67a")]
+[assembly: Guid("6ca82401-a46c-43e3-af24-736c795bb3eb")]
 
 // Version information for an assembly consists of the following four values:
 //
