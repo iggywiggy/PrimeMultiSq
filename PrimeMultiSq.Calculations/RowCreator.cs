@@ -19,6 +19,13 @@ namespace PrimeMultiSq.Calculations
 
             var row = new int[primeTopRow.Length + 1];
 
+            row[0] = primeLeft;
+
+            for (int i = 1; i < row.Length; i++)
+            {
+                row[i] = primeTopRow[i - 1]*primeLeft;
+            }
+
             return row;
         }
     }
