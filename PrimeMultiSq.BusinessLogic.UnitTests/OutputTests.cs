@@ -8,20 +8,20 @@ using Assert = NUnit.Framework.Assert;
 namespace PrimeMultiSq.BusinessLogic.UnitTests
 {
     [TestClass]
-    public class GridOutputTests
+    public class OutputTests
     {
         private IOutput _output;
 
         [TestInitialize]
         public void TestInitialise()
         {
-            _output = new GridOutput();
+            _output = new Output();
         }
 
         [SetUp]
         public void TestCaseSetup()
         {
-            _output = new GridOutput();
+            _output = new Output();
         }
 
         [TestMethod]

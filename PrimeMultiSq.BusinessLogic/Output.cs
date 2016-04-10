@@ -7,7 +7,7 @@ using PrimeMultiSq.BusinessLogic.Interfaces;
 
 namespace PrimeMultiSq.BusinessLogic
 {
-    public class GridOutput : IOutput
+    public class Output : IOutput
     {
         public StringBuilder FormatOutput(IEnumerable<int[]> input)
         {
