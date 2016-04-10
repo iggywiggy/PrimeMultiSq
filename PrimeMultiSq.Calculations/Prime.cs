@@ -33,5 +33,7 @@ namespace PrimeMultiSq.Calculations
                     primes.Add(i);
             }            
         }
+
+        
     }
 }

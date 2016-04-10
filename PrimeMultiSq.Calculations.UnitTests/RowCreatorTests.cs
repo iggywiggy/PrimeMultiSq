@@ -2,27 +2,34 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Assert = NUnit.Framework.Assert;
 using NUnit.Framework;
+using PrimeMultiSq.Calculations.Interfaces;
 
 namespace PrimeMultiSq.Calculations.UnitTests
 {
     [TestClass]
     public class RowCreatorTests
     {
-
-        [TestMethod]
-        public void CreateRow_ParamPrimeLeftIsNull_ThrowsArgumentNullException()
+        private IRowCreator _rowCreator;
+        [TestInitialize]
+        public void TestInitialise()
         {
-            Assert.Fail();
+            _rowCreator = new RowCreator();
         }
 
         [TestMethod]
-        public void CreateRow_ParamPrimeLeftIsNotNull_ParamPrimeTopRowIsNull_ThrowsArgumentNullException()
+        public void CreateRow_ParamPrimeLeftIs0_ThrowsArgumentNullException()
         {
-            Assert.Fail();
+            Assert.Throws(typeof (ArgumentNullException), () => _rowCreator.CreateRow(0, new[] {1}));
         }
 
         [TestMethod]
-        public void CreateRow_ParamPrimeLeftIsNotNull_ParamPrimeTopRowCountIs0_ThrowsArgumentNullException()
+        public void CreateRow_ParamPrimeLeftIsNot0_ParamPrimeTopRowIsNull_ThrowsArgumentNullException()
+        {
+            Assert.Throws(typeof (ArgumentNullException), () => _rowCreator.CreateRow(1, null));
+        }
+
+        [TestMethod]
+        public void CreateRow_ParamPrimeLeftIsNot0_ParamPrimeTopRowCountIs0_ThrowsArgumentNullException()
         {
             Assert.Fail();
         }
