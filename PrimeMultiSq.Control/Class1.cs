@@ -6,7 +6,7 @@ using Microsoft.Practices.Unity;
 
 namespace PrimeMultiSq.Control
 {
-    public class DiContainer : IDisposable
+    public sealed class DiContainer : IDisposable
     {
         private readonly IUnityContainer _container;
         private DiContainer _instance;
