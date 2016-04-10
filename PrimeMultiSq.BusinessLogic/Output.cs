@@ -44,7 +44,7 @@ namespace PrimeMultiSq.BusinessLogic
 
         private string FormatFirstIndex(int number)
         {
-            return $"|  {number,4}|";
+            return number != 0 ? $"|  {number,5}|" : "|       |";
         }
     }
 }
