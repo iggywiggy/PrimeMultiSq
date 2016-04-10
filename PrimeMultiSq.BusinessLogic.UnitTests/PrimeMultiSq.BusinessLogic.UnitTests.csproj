@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.2.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.2.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -51,7 +55,17 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GridCreatorTests.cs" />
+    <Compile Include="GridCreatorTestsHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrimeMultiSq.BusinessLogic.Interfaces\PrimeMultiSq.BusinessLogic.Interfaces.csproj">
+      <Project>{9C5B3D9E-E782-4C32-A20A-7081E5484341}</Project>
+      <Name>PrimeMultiSq.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
