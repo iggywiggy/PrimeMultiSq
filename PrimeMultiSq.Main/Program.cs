@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimeMultiSq.Calculations.Interfaces
+namespace PrimeMultiSq.Main
 {
-    public interface IPrime
+    class Program
     {
-        int[] GetPrimes(int numberOfPrimes);
+        static void Main(string[] args)
+        {
+        }
     }
-
-
 }

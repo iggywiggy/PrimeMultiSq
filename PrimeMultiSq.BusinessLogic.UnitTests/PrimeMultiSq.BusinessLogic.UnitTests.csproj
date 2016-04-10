@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PrimeMultiSq.BusinessLogic.UnitTests</RootNamespace>
     <AssemblyName>PrimeMultiSq.BusinessLogic.UnitTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +66,14 @@
     <ProjectReference Include="..\PrimeMultiSq.BusinessLogic\PrimeMultiSq.BusinessLogic.csproj">
       <Project>{C0A53E19-A46B-49DC-9D39-14DE11E3F89E}</Project>
       <Name>PrimeMultiSq.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrimeMultiSq.Calculations.Interfaces\PrimeMultiSq.Calculations.Interfaces.csproj">
+      <Project>{9a4950a5-57ce-4289-9ebe-740593b3bd9f}</Project>
+      <Name>PrimeMultiSq.Calculations.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrimeMultiSq.Calculations\PrimeMultiSq.Calculations.csproj">
+      <Project>{8c70725d-5ca0-4a50-a739-322e93a2c67a}</Project>
+      <Name>PrimeMultiSq.Calculations</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

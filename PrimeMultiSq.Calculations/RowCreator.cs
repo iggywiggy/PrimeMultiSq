@@ -1,32 +1,53 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PrimeMultiSq.Calculations.Interfaces;
 
 namespace PrimeMultiSq.Calculations
 {
     internal class RowCreator : IRowCreator
     {
-        public int[] CreateRow(int primeLeft, int[] primeTopRow)
+        private readonly IPrimeGenerator _primeGenerator;
+
+        public RowCreator(IPrimeGenerator primeGenerator)
         {
-            if(primeLeft == 0)
-                throw new ArgumentNullException(nameof(primeLeft));
+            _primeGenerator = primeGenerator;
+        }
 
-            if(primeTopRow == null || primeTopRow.Count() == 0)
-                throw new ArgumentNullException(nameof(primeTopRow));
+        public int[] CreateMultiRow(int leftNumber, int[] topRowNumbers)
+        {
+            if(topRowNumbers == null || topRowNumbers.Count() == 0)
+                throw new ArgumentNullException(nameof(topRowNumbers));
 
-            var row = new int[primeTopRow.Length + 1];
+            var row = new int[topRowNumbers.Length];
 
-            row[0] = primeLeft;
+            row[0] = leftNumber;
 
-            for (int i = 1; i < row.Length; i++)
+            for (var i = 1; i < row.Length; i++)
             {
-                row[i] = primeTopRow[i - 1]*primeLeft;
+                row[i] = topRowNumbers[i]*leftNumber;
             }
 
             return row;
         }
+
+        public int[] CreateTopRow(int numberOfPrimes)
+        {
+            if (numberOfPrimes == 0)
+                throw new ArgumentNullException(nameof(numberOfPrimes));
+
+            int[] primes = _primeGenerator.GetPrimes(numberOfPrimes);
+
+            var topRow = new int[1 + numberOfPrimes];
+
+            for (var i = 1; i < topRow.Count(); i++)
+            {
+                topRow[i] = primes[i-1];
+            }
+
+            return topRow;
+        }
+
     }
+
+   
 }

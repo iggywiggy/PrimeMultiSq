@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PrimeMultiSq.Calculations.Interfaces
+﻿namespace PrimeMultiSq.Calculations.Interfaces
 {
     public interface IRowCreator
     {
-        int[] CreateRow(int primeLeft, int[] primeTopRow);
+        int[] CreateMultiRow(int primeLeft, int[] primeTopRow);
+        int[] CreateTopRow(int numberOfPrimes);
     }
 }

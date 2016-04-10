@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PrimeMultiSq.BusinessLogic</RootNamespace>
     <AssemblyName>PrimeMultiSq.BusinessLogic</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,12 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GridCreator.cs" />
@@ -47,6 +42,10 @@
     <ProjectReference Include="..\PrimeMultiSq.BusinessLogic.Interfaces\PrimeMultiSq.BusinessLogic.Interfaces.csproj">
       <Project>{9c5b3d9e-e782-4c32-a20a-7081e5484341}</Project>
       <Name>PrimeMultiSq.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrimeMultiSq.Calculations.Interfaces\PrimeMultiSq.Calculations.Interfaces.csproj">
+      <Project>{9a4950a5-57ce-4289-9ebe-740593b3bd9f}</Project>
+      <Name>PrimeMultiSq.Calculations.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

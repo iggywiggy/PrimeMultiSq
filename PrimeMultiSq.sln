@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.BusinessLogic.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.BusinessLogic", "PrimeMultiSq.BusinessLogic\PrimeMultiSq.BusinessLogic.csproj", "{C0A53E19-A46B-49DC-9D39-14DE11E3F89E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.Main", "PrimeMultiSq.Main\PrimeMultiSq.Main.csproj", "{0790FE6F-A90F-4CC5-AC29-5575B24461C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{C0A53E19-A46B-49DC-9D39-14DE11E3F89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0A53E19-A46B-49DC-9D39-14DE11E3F89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0A53E19-A46B-49DC-9D39-14DE11E3F89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0790FE6F-A90F-4CC5-AC29-5575B24461C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0790FE6F-A90F-4CC5-AC29-5575B24461C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0790FE6F-A90F-4CC5-AC29-5575B24461C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0790FE6F-A90F-4CC5-AC29-5575B24461C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,6 +8,6 @@ namespace PrimeMultiSq.BusinessLogic.Interfaces
 {
     public interface IGridCreator
     {
-        IEnumerable<int[]> CreateGrid(int numberOfPrimes);
+        IEnumerable<int[]> CreatePrimeMultiGrid(int numberOfPrimes);
     }
 }

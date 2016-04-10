@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PrimeMultiSq.Calculations.Interfaces;
 
 namespace PrimeMultiSq.Calculations
 {
-    internal class Prime : IPrime
+    internal class PrimeGenerator : IPrimeGenerator
     {
         public int[] GetPrimes(int numberOfPrimes)
         {
