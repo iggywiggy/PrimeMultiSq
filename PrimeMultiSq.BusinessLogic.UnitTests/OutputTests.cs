@@ -38,7 +38,7 @@ namespace PrimeMultiSq.BusinessLogic.UnitTests
 
 
         [TestCase(0, ExpectedResult = '|')]
-        [TestCase(3, ExpectedResult = '0')]
+        [TestCase(3, ExpectedResult = ' ')]
         public char FormatOutput_NumberOfLinesReturned(int charAtIndex)
         {
             var output = _output.FormatOutput(CreateGrid()).ToString();
