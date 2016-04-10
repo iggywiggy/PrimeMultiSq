@@ -3,8 +3,8 @@ using System.Text;
 
 namespace PrimeMultiSq.BusinessLogic.Interfaces
 {
-    public interface IGridOutput
+    public interface IOutput
     {
-        StringBuilder FormatOutput(IEnumerable<int[]> grid);
+        StringBuilder FormatOutput(IEnumerable<int[]> input);
     }
 }
