@@ -17,7 +17,9 @@ namespace PrimeMultiSq.Calculations
             if(primeTopRow == null || primeTopRow.Count() == 0)
                 throw new ArgumentNullException(nameof(primeTopRow));
 
-            return null;
+            var row = new int[primeTopRow.Length + 1];
+
+            return row;
         }
     }
 }
