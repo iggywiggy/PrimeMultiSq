@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PrimeMultiSq.BusinessLogic.Interfaces
 {
-    public interface 
+    public interface IGridCreator
     {
+        int[,] CreateGrid(int numberOfPrimes);
     }
 }

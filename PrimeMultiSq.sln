@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.Calculations.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.Calculations", "PrimeMultiSq.Calculations\PrimeMultiSq.Calculations.csproj", "{8C70725D-5CA0-4A50-A739-322E93A2C67A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.BusinessLogic.Interfaces", "PrimeMultiSq.BusinessLogic.Interfaces\PrimeMultiSq.BusinessLogic.Interfaces.csproj", "{954BCE85-B0FE-40D0-8F1E-D1041644D6E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.BusinessLogic.Interfaces", "PrimeMultiSq.BusinessLogic.Interfaces\PrimeMultiSq.BusinessLogic.Interfaces.csproj", "{9C5B3D9E-E782-4C32-A20A-7081E5484341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeMultiSq.BusinessLogic.UnitTests", "PrimeMultiSq.BusinessLogic.UnitTests\PrimeMultiSq.BusinessLogic.UnitTests.csproj", "{CAEE4546-C14F-4E80-8E6E-051746272CC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,15 +33,20 @@ Global
 		{8C70725D-5CA0-4A50-A739-322E93A2C67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C70725D-5CA0-4A50-A739-322E93A2C67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C70725D-5CA0-4A50-A739-322E93A2C67A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{954BCE85-B0FE-40D0-8F1E-D1041644D6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{954BCE85-B0FE-40D0-8F1E-D1041644D6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{954BCE85-B0FE-40D0-8F1E-D1041644D6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{954BCE85-B0FE-40D0-8F1E-D1041644D6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5B3D9E-E782-4C32-A20A-7081E5484341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5B3D9E-E782-4C32-A20A-7081E5484341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5B3D9E-E782-4C32-A20A-7081E5484341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5B3D9E-E782-4C32-A20A-7081E5484341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEE4546-C14F-4E80-8E6E-051746272CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEE4546-C14F-4E80-8E6E-051746272CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEE4546-C14F-4E80-8E6E-051746272CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEE4546-C14F-4E80-8E6E-051746272CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2E5EC6EA-426B-438C-8E0C-F20BD28CB398} = {61C1923D-B776-4689-A89F-D483B4F1B06C}
+		{CAEE4546-C14F-4E80-8E6E-051746272CC4} = {61C1923D-B776-4689-A89F-D483B4F1B06C}
 	EndGlobalSection
 EndGlobal
